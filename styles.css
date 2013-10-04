@@ -1,0 +1,10 @@
+.sharebox {
+    display:block;
+    margin:10px 0;
+    width:100%;
+    border:1px solid #aaa;
+    font-size:14px;
+}
+.sharebox:focus {
+    outline:none;
+}
