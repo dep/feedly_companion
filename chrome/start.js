@@ -1,20 +1,26 @@
 $("body").live("keypress", function(event) {
     code = event.keyCode;
-    console.log(code);
 
     if (nothing_focused() && event.shiftKey == true) {
+        /* shift-c */
         if (code == 67) {
             if (sharebox()) {
                 var title = generate_url();
                 $(".selectedEntry .sharebox").attr("value", "'" + title.name + "' - From: " + title.url).select();
             }
         }
+        /* shift-s */
+        if (code == 83) {
+            $(".selectedEntry img[alt='Custom Sharing Tool']").click()
+        }
+        /* shift-u */
         if (code == 85) {
             if (sharebox()) {
                 var title = generate_url();
                 $(".selectedEntry .sharebox").attr("value", title.url).select();
             }
         }
+        /* shift-e */
         if (code == 69) {
             var title = generate_url();
             url = "https://mail.google.com/mail/?view=cm&fs=1&su=" + encodeURIComponent(title.name) + "&body=Check out this article: " + encodeURIComponent(title.name) + " From: " + title.url;

@@ -1,8 +1,8 @@
 {
 		"name": "Feedly Companion",
-		"version": "1.0.5",
+		"version": "1.1",
 		"manifest_version": 2,
-		"description": "Adding email (shift-e) and copy link (shift-c) support to Feedly for Chrome!",
+		"description": "New Feedly keyboard shortcuts: Email Article (shift-e), copy link (shift-c), copy URL (shift-u), Use custom sharing tool [Feedly Pro] (shift-s)",
 		"icons": { "64": "icon-64.png", "48": "icon-48.png", "32": "icon-32.png" },
 		"permissions": [
 				"tabs",
